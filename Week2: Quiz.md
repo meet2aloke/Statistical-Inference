@@ -24,8 +24,23 @@ round(answ3,0)
 ##Question 4
 Refer to the previous question. Brain volume for adult women is about 1,100 cc for women with a standard deviation of 75 cc. Consider the sample mean of 100 random adult women from this population. Around what is the 95th percentile of the distribution of that sample mean?
 
+mean4<- 1100;
+sd4<- 75;
+n4<- 100;
+var4<- sd4/sqrt(n4);
+quantile4<- 1.645;
+answ4<- mean4+(var4*quantile4);
+answ4
+
+
 ##Question 5
 You flip a fair coin 5 times, about what's the probability of getting 4 or 5 heads?
+
+prob4<- choose(5,4)*0.5^4*(1-0.5)^1;
+prob5<- choose(5,5)*0.5^5*(1-0.5)^0;
+answ5<- prob4+prob5;
+round(answ5,2)
+
 
 ##Question 6
 The respiratory disturbance index (RDI), a measure of sleep disturbance, for a specific population has a mean of 15 (sleep events per hour) and a standard deviation of 10. They are not normally distributed. Give your best estimate of the probability that a sample mean RDI of 100 people is between 14 and 16 events per hour?
